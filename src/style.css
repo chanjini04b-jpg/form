@@ -1,0 +1,230 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    color: #222;
+    min-height: 100vh;
+    overflow-y: auto;
+html {
+    height: 100%;
+}
+}
+
+header {
+    display: block;
+    padding: 32px 0 16px 0;
+    background: #fafbfc;
+    margin-bottom: 24px;
+/* 헤더 영역 좌우 분할 */
+.header-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 32px;
+}
+.header-left {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+aside#recent-forms-widget {
+    flex: 0 0 260px;
+    background: #f4f6f8;
+    border-radius: 10px;
+    padding: 18px 14px;
+    min-width: 200px;
+    max-width: 260px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    height: fit-content;
+    margin-top: 0;
+}
+}
+.logo h1 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+    color: #2a2a2a;
+}
+.search-filter {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 8px;
+    justify-content: center;
+}
+#searchInput, #categoryFilter {
+    padding: 10px 14px;
+    font-size: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background: #fff;
+    outline: none;
+}
+#searchInput:focus, #categoryFilter:focus {
+    border-color: #4f8cff;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px 32px 16px;
+    display: block;
+    min-height: 80vh;
+}
+
+#forms-list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+    min-height: 400px;
+}
+
+.category-brick {
+    background: #f4f6fa;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 24px 18px 18px 18px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.category-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+.category-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.category-list li {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 1rem;
+    color: #333;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.category-list button {
+    margin-left: 8px;
+    padding: 6px 12px;
+    background: #4f8cff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.98rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.category-list button:hover {
+    background: #2563eb;
+}
+.form-card {
+    background: #f9f9fb;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 22px 18px 18px 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: box-shadow 0.2s, border-color 0.2s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.form-card:hover {
+    border-color: #4f8cff;
+    box-shadow: 0 4px 16px rgba(79,140,255,0.08);
+}
+.form-card h3 {
+    margin: 0 0 6px 0;
+    font-size: 1.15rem;
+    color: #1a1a1a;
+}
+.form-card p {
+    margin: 0 0 4px 0;
+    font-size: 0.98rem;
+    color: #444;
+}
+.download-btn {
+    margin-top: 8px;
+    padding: 10px 0;
+    background: #4f8cff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.download-btn:hover {
+    background: #2563eb;
+}
+
+aside#recent-forms-widget {
+    flex: 1;
+    background: #f4f6f8;
+    border-radius: 10px;
+    padding: 18px 14px;
+    min-width: 200px;
+    max-width: 260px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    height: fit-content;
+}
+#recent-forms-widget h2 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #2a2a2a;
+}
+#recent-forms-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#recent-forms-list li {
+    padding: 6px 0;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 0.97rem;
+    color: #444;
+}
+#recent-forms-list li:last-child {
+    border-bottom: none;
+}
+
+footer {
+    background: #f7f7f7;
+    text-align: center;
+    padding: 24px 0 18px 0;
+    color: #888;
+    font-size: 0.98rem;
+    margin-top: 32px;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* 광고 영역 Placeholder 스타일 */
+#adsense-header, #adsense-content-top {
+    background: #ececec;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 18px 0;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: #888;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
