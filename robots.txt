@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://phomphom.netlify.app/sitemap.xml

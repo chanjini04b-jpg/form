@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>무료서식공개 - 즉시 다운로드 양식</title>
+  <link href="https://phomphom.netlify.app/"/>
+  <updated>2025-10-30T00:00:00Z</updated>
+  <id>https://phomphom.netlify.app/</id>
+  <author>
+    <name>무료서식공개</name>
+  </author>
+  <entry>
+    <title>무료서식공개 오픈</title>
+    <link href="https://phomphom.netlify.app/"/>
+    <id>https://phomphom.netlify.app/</id>
+    <updated>2025-10-30T00:00:00Z</updated>
+    <summary>무료서식공개 사이트가 오픈되었습니다. 다양한 서식을 즉시 다운로드하세요.</summary>
+  </entry>
+</feed>
